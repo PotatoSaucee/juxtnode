@@ -1,0 +1,87 @@
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuxtNode</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <!--link rel="stylesheet" href="{% static 'css/foundation.css' %}"-->
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+	<div class="navbar-header">
+          <h1 class="title-link"><a class="navbar-brand" href ="#">JuxtNode</a></h1>
+        </div>
+      </div>
+    </nav>
+   <form class="navbar-form navbar-center" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control"  placeholder="Search">
+    </div>
+        <button type="submit" class="btn btn-default">Search</button>
+   </form>
+
+<div class="container">
+    <div class ="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+           <h4 class="panel-title">
+             <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Books</a>
+           </h4>
+         </div>
+           <div id="collapse1" class="panel-collapse collapse in">
+             <div class="panel-body"><a href="#">All Books</a></div>
+             <div class="panel-body"><a href="#">Science Fiction</a></div>
+           </div>
+       </div>
+
+       <div class="panel panel-default">
+         <div class="panel-heading">
+	   <h4 class="panel-title">
+             <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Cosmetics</a>
+           </h4>
+         </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body"><a href="#">All Cosmetics</a></div>
+              <div class="panel-body"><a href="#">Lip Products</a></div>
+            </div>
+         </div>
+
+        <div class="panel panel-defaault">
+          <div class="panel-heading">
+	    <h4 class="panel-title">
+             <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Electronics</a>
+            </h4>
+          </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body"><a href="#">All Electronics</a></div>
+              <div class="panel-body"><a href="#">Cameras</a></div>
+              <div class="panel-body"><a href="#">Laptops</a></div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+  	    <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent=#accordion href="#collapse4">Food</a>
+            </h4>
+          </div>
+            <div id="collapse4" class="panel-collapse collapse">
+              <div class="panel-body"><a href="#">All Food</a></div>
+              <div class="panel-body"><a href="#">Candy</a></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script src"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

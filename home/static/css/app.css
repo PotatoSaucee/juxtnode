@@ -1,0 +1,49 @@
+#topbar {
+    border-bottom: solid 1px #00d33b;
+}
+
+#sidenavcontainer {
+    border: solid 1px #00d33b;
+}
+
+.panel-group.panel.panel-default.panel-body {
+    width: 80%;
+    margin: 15px;
+}
+
+.navbar-brand {
+    font-family: 'Lobster';
+    color: #00d33b;
+}
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #00d33b;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: #fff;
+    box-shadow: none;
+    border: 0;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+    color: #00d33b;
+}
+

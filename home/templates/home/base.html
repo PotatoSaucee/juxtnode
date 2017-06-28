@@ -1,0 +1,128 @@
+{# Load the tag library #}
+{% load bootstrap3 %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% bootstrap_css %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    <title>JuxtNode</title>
+
+  </head>
+    <body>
+      <!--Topbar navigation-->
+      <nav id="topbar" class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">JuxtNode</a>
+          </div>
+        </div>
+      </nav>
+
+      <!--Search bar-->
+      <div class="container">
+      	<div class="row">
+              <div class="col-md-6">
+                  <div id="custom-search-input">
+			<form id="searchform" action="/products/" method="get" accept-charset="utf-8">
+                      <div class="input-group col-md-12">
+                          <input name="q" type="text" class="form-control input-lg" placeholder="Search for a product" />
+                          <span class="input-group-btn">
+                              <button class="btn btn-info btn-lg" type="button">
+                                  <i class="glyphicon glyphicon-search"></i>
+                              </button>
+                          </span>
+                      </div>
+			</form>
+                  </div>
+              </div>
+      	</div>
+      </div>
+
+      <div  class="container-fluid">
+        <div class="row">
+          <div id ="sidenavcontainer" class="col-sm-3 col-lg-2">
+            <nav class="navbar navbar-default navbar-fixed-side">
+              <div class="container">
+                <!--Side nav header-->
+                <h2>Categories</h2>
+                <!--Side nav-->
+                <div class="panel-group col-sm-3 col-lg-2" id="accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Books</a>
+                      </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                      <div class="panel-body"><a href="#">All Books</a></div>
+                      <div class="panel-body"><a href="#">Science Fiction</a></div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Cosmetics</a>
+                      </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                      <div class="panel-body"><a href="#">All Cosmetics</a></div>
+                      <div class="panel-body"><a href="#">Lip Products</a></div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Electronics</a>
+                      </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                      <div class="panel-body"><a href="#">All Electronics</a></div>
+                      <div class="panel-body"><a href="#">Cameras</a></div>
+                      <div class="panel-body"><a href="#">Laptops</a></div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Food</a>
+                      </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                      <div class="panel-body"><a href="#">All Food</a></div>
+                      <div class="panel-body"><a href="#">Candy</a></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="col-sm-9 col-lg-10">
+
+
+
+
+        <!-- your page content -->
+
+
+
+
+        </div>
+      </div>
+    </div>
+    </body>
+</html
+
