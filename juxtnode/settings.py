@@ -83,8 +83,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 	'NAME': 'juxtnode_product_db',
-	'USER': 'juxtnodeadmin',
-	'PASSWORD': 'hughjanus',
+	'USER': '',
+	'PASSWORD': '',
 	'HOST': 'localhost',
 	'PORT': '',
     }
